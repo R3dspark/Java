@@ -20,6 +20,25 @@ public class ChatBot {
         for(int i = 1; i <= nmb; i++){
             System.out.println(i + " !");
         }
+        System.out.println("""
+                Let's test your programming knowledge.
+                Why do we use methods?
+                1. To repeat a statement multiple times.
+                2. To decompose a program into several small subroutines.
+                3. To determine the execution time of a program.
+                4. To interrupt the execution of a program.
+                """);
+        while (true){
+            int answer = in.nextInt();
+           if (answer == 2){
+               System.out.println("""
+                       Completed, you are a smart boi!
+                       Congratulations, have a nice day!""");
+               break;
+           }else {
+               System.out.println("Wrong you dumbass");
+           }
+        }
         in.close();
     }
 }
